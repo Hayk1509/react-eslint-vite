@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Added */
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+
+    /* Paths */
+    "baseUrl": "src",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@common/*": ["common/*"],
+      "@modules/*": ["modules/*"],
+      "@pages/*": ["pages/*"],
+      "@types/*": ["types/*"],
+      "@shared/components": ["shared/components"],
+      "@shared/containers": ["shared/containers"],
+      "@shared/dialogs": ["shared/dialogs"],
+      "@shared/entities": ["shared/entities"],
+      "@shared/enums": ["shared/enums"],
+      "@shared/hooks": ["shared/hooks"],
+      "@shared/layouts": ["shared/layouts"],
+      "@shared/services": ["shared/services"]
+    }
+  },
+  "include": ["src", ".eslintrc.cjs", ".eslintprod.cjs", "vite.config.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

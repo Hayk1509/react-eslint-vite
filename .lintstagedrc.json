@@ -1,0 +1,4 @@
+{
+  "*.{ts,tsx}": ["prettier . --check --end-of-line auto", "eslint . --quiet --config .eslintprod.cjs"],
+  "*.{css,sass,scss,less, html}": "prettier --check"
+}

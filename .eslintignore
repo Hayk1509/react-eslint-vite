@@ -1,0 +1,9 @@
+# Ignore artifacts:
+build
+tsconfig.json
+tsconfig.node.json
+package.json
+yarn.lock
+.eslintprod.cjs
+.eslintrc.cjs
+.eslintrules.cjs
